@@ -5,11 +5,22 @@ const Navbar = () => {
     return (
         <nav className={style.nav}>
             <ul className={style.list}>
-                <li className={`${style.item} ${style.visited}`}>HTML</li>
-                <li className={style.item}>CSS</li>
-                <li className={style.item}>JS</li>
-                <li className={style.item}>React</li>
-            </ul>
+                <li className={`${style.item} ${style.visited}`}>
+                    <a href='/profile'>Profile</a>
+                </li>
+                <li className={style.item}>
+                    <a href='/dialogs'>Messages</a>
+                </li>
+                <li className={style.item}>
+                    <a href='/news'>News</a>
+                </li>
+                <li className={style.item}>
+                    <a href='/music'>Music</a>
+                </li>
+                <li className={style.item}>
+                    <a href='/settings'>Settings</a>
+                </li>
+             </ul>
         </nav>
     );
 }
